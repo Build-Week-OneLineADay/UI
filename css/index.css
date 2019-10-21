@@ -126,3 +126,52 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+footer nav {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+footer nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 10px 20px;
+  margin-left: 4%;
+}
+body {
+  background-color: lightblue;
+}
+body header .title-header {
+  display: flex;
+}
+body header .title-header .title {
+  flex-direction: end;
+}
+.main-right {
+  display: flex;
+  justify-content: center;
+  border: 2px dashed pink;
+  width: 25%;
+  margin-left: 70%;
+  margin-top: 15%;
+}
+.main-right .cta-heading {
+  border: 2px green solid;
+  font-size: 4em;
+}
+.main-right .cta-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-right .cta-box button {
+  margin: 1.5em;
+  font-size: 3em;
+  padding: 10px 20px;
+}
