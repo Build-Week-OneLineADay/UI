@@ -126,3 +126,80 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+footer nav {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+footer nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 10px 20px;
+  margin-left: 4%;
+}
+body {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+body header {
+  width: 95%;
+  margin: 0 auto;
+}
+body header .title-header .title {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5% 20% 0% 0%;
+  font-size: 3em;
+}
+body header .title-header img {
+  width: 4%;
+  height: 4%;
+  margin-top: 3%;
+}
+body .main-content {
+  display: flex;
+}
+body .main-content .main-left {
+  width: 30%;
+  margin-top: 10%;
+}
+body .main-content .main-left p {
+  font-size: 30px;
+}
+body .main-content .main-right {
+  display: flex;
+  justify-content: center;
+  width: 51%;
+  margin: 10% 0% 0% 15%;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+body .main-content .main-right .cta {
+  width: 100%;
+}
+body .main-content .main-right .cta .cta-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-content .main-right .cta .cta-box .cta-heading {
+  font-size: 4em;
+  width: 100%;
+  padding-top: 3%;
+}
+body .main-content .main-right .cta .cta-box .cta-heading h2 {
+  text-align: center;
+}
+body .main-content .main-right .cta .cta-box button {
+  margin: 25% 5% 20% 5%;
+  font-size: 3em;
+  padding: 10px 20px;
+  border-radius: 10%;
+  width: 100%;
+}
