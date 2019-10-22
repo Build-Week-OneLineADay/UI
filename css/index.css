@@ -145,33 +145,59 @@ footer nav a {
   margin-left: 4%;
 }
 body {
-  background-color: lightblue;
+  background-color: #c9c9e3;
 }
-body header .title-header {
-  display: flex;
+body header {
+  width: 95%;
+  margin: 0 auto;
 }
 body header .title-header .title {
-  flex-direction: end;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5% 20% 0% 0%;
+  font-size: 3em;
 }
-.main-right {
+body header .title-header img {
+  width: 5%;
+  height: 5%;
+  margin-top: 3%;
+}
+body .main-content {
+  display: flex;
+}
+body .main-content .main-left {
+  width: 30%;
+  margin-top: 10%;
+}
+body .main-content .main-left p {
+  font-size: 30px;
+}
+body .main-content .main-right {
   display: flex;
   justify-content: center;
-  border: 2px dashed pink;
-  width: 25%;
-  margin-left: 70%;
-  margin-top: 15%;
+  border: 2px solid black;
+  background-color: lightgray;
+  width: 51%;
+  margin: 10% 0% 0% 15%;
 }
-.main-right .cta-heading {
-  border: 2px green solid;
-  font-size: 4em;
+body .main-content .main-right .cta {
+  border-radius: 40%;
 }
-.main-right .cta-box {
+body .main-content .main-right .cta .cta-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-right .cta-box button {
+body .main-content .main-right .cta .cta-box .cta-heading {
+  background-color: green;
+  font-size: 4em;
+}
+body .main-content .main-right .cta .cta-box .cta-heading h2 {
+  text-align: center;
+}
+body .main-content .main-right .cta .cta-box button {
   margin: 1.5em;
   font-size: 3em;
   padding: 10px 20px;
+  border-radius: 10%;
 }
