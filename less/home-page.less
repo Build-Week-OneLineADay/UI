@@ -1,24 +1,75 @@
     body {
-        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-
+        background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+        background-blend-mode: screen;
+        color: @main-text;
+        font-family: 'Noto Serif', serif;
 
         header {
-            width: 95%;
+            width: 80%;
             margin: 0 auto;
+
+            nav {
+
+                .img-logo {
+
+                    @media @mobile {
+                        .columning();
+                        text-align: center;
+                        font-size: 2em;
+                        margin-top: .5em;
+                    }
+                }
+
+
+
+                a {
+                    margin-left: 4%;
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    color: white;
+                    background-color: @highlight-color;
+                    border-radius: 25px;
+                    padding: .5% 2% .5% 2%;
+
+                    @media @mobile {
+                        margin-top: .5em;
+                    }
+                }
+
+                a:hover {
+                    color: @main-text;
+                }
+            }
+
 
             .title-header {
 
                 .title {
                     display: flex;
-                    justify-content: flex-end;
-                    margin: 5% 20% 0% 0%;
+                    justify-content: center;
                     font-size: 3em;
+                    margin-top: 5%;
+
+
+                    @media @mobile {
+                        margin: 7% 5% 0% 0%;
+                        text-align: center;
+                    }
                 }
 
                 img {
                     width: 4%;
                     height: 4%;
                     margin-top: 3%;
+
+                    @media @mobile {
+                        display: none;
+                    }
+                }
+
+                span {
+                    color: @highlight-color;
+                    text-decoration: underline;
                 }
             }
         }
@@ -26,13 +77,35 @@
         .main-content {
             display: flex;
 
+            @media @mobile {
+                .columning();
+                align-items: center;
+            }
+
             .main-left {
-                width: 30%;
+                width: 40%;
                 margin-top: 10%;
+
+                @media @mobile {
+                    width: 100%;
+                }
 
                 p {
                     font-size: 30px;
                     padding-top: 25px;
+
+                    span {
+                        color: @highlight-color;
+                        text-decoration: underline;
+                    }
+                }
+
+                h2 {
+                    color: @highlight-color;
+                    font-size: 2em;
+                    text-align: center;
+                    padding-top: 3%;
+                    border-bottom: 1px solid @highlight-color;
                 }
             }
 
@@ -40,42 +113,143 @@
             .main-right {
                 display: flex;
                 justify-content: center;
-                width: 51%;
+                width: 40%;
+                height: 60%;
                 margin: 10% 0% 0% 15%;
-                border: 3px solid black;
+                border: 3px solid @highlight-color;
                 border-radius: 5%;
+                background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+
+                @media @mobile {
+                    .columning();
+                    align-items: center;
+                    width: 100%;
+                    margin: 5% auto;
+                }
+
 
                 .cta {
                     width: 100%;
+                    border-radius: 5%;
 
                     .cta-box {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
 
+
                         .cta-heading {
-                            font-size: 4em;
+                            font-size: 3.5em;
                             width: 100%;
                             padding-top: 3%;
 
 
+
+
+
                             h2 {
                                 text-align: center;
+                                border-bottom: 2px solid black;
+                                border-color: @highlight-color;
+
+                                @media @mobile {
+                                    padding-bottom: 2%;
+                                }
                             }
 
                         }
 
                         button {
                             color: white;
-                            background-color: #008080;
-                            margin: 25% 5% 20% 5%;
-                            font-size: 3em;
-                            padding: 10px 20px;
-                            border-radius: 10%;
+                            background-color: @highlight-color;
+                            font-size: 2.5em;
+                            border-radius: 25px;
                             width: 100%;
+                            padding-top: 4%;
+                            padding-bottom: 4%;
+                            margin: 25% 5% 20% 5%;
+                        }
+
+                        button:hover {
+                            color: @main-text;
+                            cursor: pointer;
                         }
                     }
                 }
             }
+        }
+
+        .about-main {
+            text-align: center;
+            margin-top: 3%;
+            margin-bottom: 5%;
+
+
+            .about-intro {
+
+                p {
+                    font-size: 2em;
+                }
+
+                span {
+                    color: @highlight-color;
+                    text-decoration: underline;
+                }
+            }
+
+            .about-main {
+                border: 2px solid black;
+
+            }
+
+            .about-team {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                border: 2px solid @highlight-color;
+                border-radius: 25px;
+                background-image: linear-gradient(to right, #d5d9dd 0%, #868f96 100%);
+                ;
+                margin: 4%;
+
+                @media @mobile {
+                    .columning();
+                    align-items: center;
+                    margin-top: 2em;
+                    ;
+                }
+
+                .about-person {
+                    width: 40%;
+                    text-align: center;
+                    margin: 1%;
+
+                    @media @mobile {
+                        .columning();
+                        align-items: center;
+                    }
+
+                    h1 {
+                        font-size: 1.5em;
+                        text-decoration: underline;
+                        margin-bottom: 10px;
+
+                        img {
+                            height: 20px;
+                        }
+                    }
+
+                    img {
+                        height: 70%;
+                        border-radius: 50%;
+
+                        @media @mobile {
+                            border-radius: 10%;
+                            ;
+                        }
+                    }
+                }
+            }
+
         }
     }
