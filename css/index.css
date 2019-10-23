@@ -387,9 +387,7 @@ body .main-right .cta .cta-box button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid #008080;
   border-radius: 25px;
-  background-color: white;
   margin: 1%;
 }
 @media (max-width:880px) {
@@ -407,7 +405,7 @@ body .main-right .cta .cta-box button:hover {
   text-align: center;
   margin: 1%;
   background-color: #313843;
-  border: 2px solid black;
+  border: 2px solid #008080;
   border-radius: 15%;
 }
 @media (max-width:880px) {
